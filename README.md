@@ -2,7 +2,7 @@
 
 Uses the [fingerprint2.js](https://github.com/Valve/fingerprintjs2) script to try and create a more or less unique identifier for a visitor. This may however reduce the accuracy of your metrics as opposed to using Google's own methods, which may or may not be good enough for your tracking purposes.
 
-Upside is that no tracking cookies are created which is nice if you are concerned about showing a cookie consent warning for your tracking script.  
+Upside is that no tracking cookies are created which is nice if you are concerned about showing a cookie consent warning for your tracking script.
 Tracking *is* harmless, right?
 
 It does add about 30KB page weight for the fingerprint2.js script, which you may or may not like. Oh, and it requires jQuery.
@@ -21,5 +21,13 @@ Turn it off if you are so inclined:
 
 ```
 add_filter( 'analytics_without_cookies_anonymize_ip', '__return_true' );
+```
+
+###Logged in users are not tracked by default
+
+Turn tracking logged in users on:
+
+```
+add_filter( 'analytics_without_cookies_ignore_logged_in_users', '__return_false' );
 ```
 

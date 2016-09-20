@@ -33,6 +33,17 @@ add_action( 'wp_enqueue_scripts', 'analytics_without_cookies_enqueue_script' );
 function analytics_without_cookies_enqueue_script() {
 
 	/**
+	 * Track logged in users?.
+	 *
+	 * @since 1.0.0
+	 */
+	if ( apply_filters( 'analytics_without_cookies_ignore_logged_in_users', true ) ) {
+		if ( is_user_logged_in() ) {
+			return;
+		}
+	}
+
+	/**
 	 * Add your own Google Analytics tracking code via this filter.
 	 *
 	 * @since 1.0.0
