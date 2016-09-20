@@ -4,7 +4,7 @@
  *
  * @package    WordPress
  * @subpackage Analytics_Without_Cookies
- * @version    1.0.0
+ * @version    1.1.0
  * @license    GPL-3.0+
  * @link       https://github.com/barryceelen/wp-analytics-without-cookies
  * @copyright  2016 Barry Ceelen
@@ -16,7 +16,7 @@
  * Description:       Use basic Google Analytics 'universal' tracking without having to show a cookie consent banner in Europe. Uses browser fingerprinting via fingerprint2.js.
  * Author:            Barry Ceelen
  * Author URI:        https://github.com/barryceelen
- * Version:           1.0.0
+ * Version:           1.1.0
  * License:           GPL-3.0+
  * License URI:       http://www.gnu.org/licenses/gpl-3.0.txt
  * Domain Path:       /languages
