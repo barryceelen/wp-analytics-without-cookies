@@ -57,7 +57,7 @@ function analytics_without_cookies_enqueue_script() {
 		wp_enqueue_script(
 			'fingerprint2',
 			plugins_url( "js/fingerprint2{$min}.js", __FILE__ ),
-			array( 'jquery' ),
+			array(),
 			'1.4.1',
 			true
 		);
