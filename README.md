@@ -7,7 +7,7 @@ Tracking *is* harmless, right?
 
 It does add about 30KB page weight for the fingerprint2.js script, which you may or may not like.
 
-###Setting your analytics tracking ID
+### Setting your analytics tracking ID
 
 There is no settings page for this plugin. Set your own tracking id by adding a filter:
 
@@ -15,7 +15,7 @@ There is no settings page for this plugin. Set your own tracking id by adding a 
 add_filter( 'analytics_without_cookies_tracking_id', function() { return 'UA-XXXXXXX-XX'; } );
 ```
 
-###Your visitor's IP adresses are anonymized by default
+### Your visitor's IP adresses are anonymized by default
 
 Turn IP anonymization off if you are so inclined:
 
@@ -23,7 +23,7 @@ Turn IP anonymization off if you are so inclined:
 add_filter( 'analytics_without_cookies_anonymize_ip', '__return_true' );
 ```
 
-###Logged in users are not tracked by default
+### Logged in users are not tracked by default
 
 Track logged in users:
 
