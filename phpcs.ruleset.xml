@@ -8,7 +8,7 @@
   <rule ref="Generic.Commenting.Todo"/>
   <rule ref="WordPress.NamingConventions.PrefixAllGlobals">
     <properties>
-      <property name="prefixes" type="array" value="default_admin_color_scheme"/>
+      <property name="prefixes" type="array" value="analytics_without_cookies"/>
     </properties>
   </rule>
   <rule ref="WordPress.WP.DeprecatedClasses">
