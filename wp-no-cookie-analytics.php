@@ -52,6 +52,12 @@ function analytics_without_cookies_enqueue_script() {
 
 	if ( ! empty( $tracking_id ) ) {
 
+		/*
+		 * Fingerprintjs2 1.5.1 - Modern & flexible browser fingerprint library v2
+		 * https://github.com/Valve/fingerprintjs2
+		 * Copyright (c) 2015 Valentin Vasilyev (valentin.vasilyev@outlook.com)
+		 * Licensed under the MIT (http://www.opensource.org/licenses/mit-license.php) license.
+		 */
 		wp_enqueue_script(
 			'fingerprint2',
 			plugins_url( "js/fingerprint2.min.js", __FILE__ ),
