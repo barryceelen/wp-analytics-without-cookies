@@ -1,5 +1,7 @@
 # Google Analytics without setting a cookie
 
+[![Build Status](https://travis-ci.org/barryceelen/wp-analytics-without-cookies.svg?branch=master)](https://travis-ci.org/barryceelen/wp-analytics-without-cookies)
+
 Uses the [fingerprint2.js](https://github.com/Valve/fingerprintjs2) script to try and create a more or less unique identifier for a visitor. This will reduce the accuracy of your metrics as opposed to using Google's own methods, which may or may not be good enough for your tracking purposes.
 
 Upside is that no tracking cookies are created which is nice if you are concerned about showing a cookie consent warning for your tracking script.
