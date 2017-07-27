@@ -57,7 +57,7 @@ function analytics_without_cookies_enqueue_script() {
 		 * https://github.com/Valve/fingerprintjs2
 		 * Copyright (c) 2015 Valentin Vasilyev (valentin.vasilyev@outlook.com)
 		 * Licensed under the MIT (http://www.opensource.org/licenses/mit-license.php) license.
-		 */
+		*/
 		wp_enqueue_script(
 			'fingerprint2',
 			plugins_url( "js/fingerprint2.min.js", __FILE__ ),
