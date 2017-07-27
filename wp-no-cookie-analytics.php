@@ -52,13 +52,11 @@ function analytics_without_cookies_enqueue_script() {
 
 	if ( ! empty( $tracking_id ) ) {
 
-		$min = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? '.min' : '';
-
 		wp_enqueue_script(
 			'fingerprint2',
-			plugins_url( "js/fingerprint2{$min}.js", __FILE__ ),
+			plugins_url( "js/fingerprint2.min.js", __FILE__ ),
 			array(),
-			'1.4.1',
+			'1.5.0',
 			true
 		);
 
