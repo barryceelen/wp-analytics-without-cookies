@@ -56,7 +56,7 @@ function analytics_without_cookies_enqueue_script() {
 			'fingerprint2',
 			plugins_url( "js/fingerprint2.min.js", __FILE__ ),
 			array(),
-			'1.5.0',
+			'1.5.1',
 			true
 		);
 
