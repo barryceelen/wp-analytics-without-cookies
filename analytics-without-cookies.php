@@ -51,7 +51,6 @@ function analytics_without_cookies_enqueue_script() {
 	$tracking_id = apply_filters( 'analytics_without_cookies_tracking_id', '' );
 
 	if ( ! empty( $tracking_id ) ) {
-
 		/*
 		 * Fingerprintjs2 1.5.1 - Modern & flexible browser fingerprint library v2
 		 * https://github.com/Valve/fingerprintjs2
